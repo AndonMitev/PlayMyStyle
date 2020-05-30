@@ -9,3 +9,11 @@ export const registerUser = async (email, password) => {
     console.log('error creating user', error);
   }
 };
+
+export const loginUser = async (email, password) => {
+  try {
+    return await auth().signInWithEmailAndPassword(email, password);
+  } catch (error) {
+    console.log(`error login with user: ${email}`, error);
+  }
+};

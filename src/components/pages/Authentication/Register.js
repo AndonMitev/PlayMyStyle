@@ -44,6 +44,7 @@ const Register = () => {
 
         <div>
           <InputWithLabel
+            type='password'
             name='password'
             value={state.password}
             onChange={onChange}
@@ -55,6 +56,7 @@ const Register = () => {
 
         <div>
           <InputWithLabel
+            type='password'
             name='confirmPassword'
             value={state.confirmPassword}
             onChange={onChange}
@@ -75,7 +77,7 @@ const Register = () => {
           {errors?.email ? <ErrorMsg className='error-msg' content={errors.email} /> : null}
         </div>
 
-        <InputWithLabel shouldUseLabel={false} type='submit' />
+        <InputWithLabel type='submit' />
       </form>
     </div>
   );
