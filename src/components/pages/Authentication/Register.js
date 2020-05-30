@@ -14,7 +14,6 @@ const INITIAL_STATE = {
   password: 'admin',
   confirmPassword: 'admin',
   email: 'admin@abv.bg',
-  playlists: [],
 };
 
 const Register = () => {
